@@ -1,0 +1,257 @@
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* ---------------------------------------------Top Section----------------------------------------------------- */
+#top-section {
+    text-align: center;
+    background-image: url('./files/cover.jpg');
+    background-size: cover; 
+    background-position: center; 
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+#top-section img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#top-section img:hover {
+    animation: tremble 0.5s ease-in-out;
+}
+
+@keyframes tremble {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+#top-section h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#top-section nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#top-section nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    background-color: #00BFFF;
+    color: yellow;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0s ease-in-out, background-color 0s ease-in-out, box-shadow 0s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#top-section nav a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------------------------Infographic----------------------------------------------------- */
+#infographic {
+    background-color: #FFDE59;
+    border-radius: 10px;
+    padding: 20px;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    position: relative;
+    background-image: url('./files/infographic.png');
+    background-position: center;
+    background-size: 300px;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+#infographic:hover {
+    transform: translateY(-5px);
+}
+
+#infographic h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#infographic ul {
+    list-style-type: none;
+}
+
+/* ---------------------------------------------Education----------------------------------------------------- */
+#education {
+    background-color: #00CCFF;
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    background-image: url('./files/education.png');
+    background-position: center;
+    background-size: 300px;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+#education:hover {
+    transform: translateY(-5px);
+}
+
+#education h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#education ul {
+    list-style-type: none;
+}
+
+#education .education-content {
+    position: relative;
+    padding-right: 50px;
+}
+
+
+#education li {
+    margin-bottom: 15px;
+}
+
+#education strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* ---------------------------------------------Contact Form----------------------------------------------------- */
+.contact-form {
+    background-color: #C1FF72;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 95%;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+    background-image: url('./files/contact.png');
+    background-position: center;
+    background-size: 300px;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+h2{
+    margin-bottom: 10px; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.radio-group,.radio-label {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+}
+.radio-group input {
+    margin-right: 3px;
+}
+
+.submit-button {
+    background-color: pink;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: palevioletred;
+}
+
+/* ---------------------------------------------Footer----------------------------------------------------- */
+footer {
+    margin-top: 20px;
+}
+
+/* ---------------------------------------------Scroll To Top Button----------------------------------------------------- */
+.scroll-to-top-button {
+    background-color: rgb(233, 81, 106);
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+
+}
+.scroll-to-top-button:hover {
+    background-color: rgb(193, 53, 76);
+    animation: tremble 0.5s ease-in-out;
+}
+
+.scroll-to-top-button a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 400px) {
+    #top-section,
+    #infographic,
+    #education,
+    #contact-form {
+        width: 100%;
+    }
+
+    #top-section img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,95 @@
+/* General styling */
+body {
+    margin: 200px;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 400px) {
+    /* Styles for narrow screens (e.g., mobile phones) */
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Top Section styling */
+#top-section {
+    text-align: center;
+    padding: 20px 0;
+    background-image: url('./files/1.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    max-width: 1024px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#top-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#top-section h1 {
+    margin: 15px 0;
+}
+
+#top-section nav {
+    margin-top: 20px;
+}
+
+/* Infographic Section styling */
+#infographic {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 40px 0;
+}
+
+#honesty-statement {
+    margin-top: 20px;
+}
+
+/* Education Section styling */
+#education {
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 40px 0;
+}
+
+#education ul {
+    list-style: none;
+    padding: 0;
+}
+
+#education li {
+    margin-bottom: 20px;
+}
+
+/* Contact Me Form styling */
+#contact-form {
+    background-color: #c8e6c9; /* Light green background */
+    padding: 40px 0;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Horizontal line separator */
+.separator {
+    border-top: 2px solid #bdbdbd; /* Light gray color for the separator */
+    margin: 20px 0;
+}
